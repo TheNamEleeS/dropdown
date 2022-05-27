@@ -1,0 +1,7 @@
+<div style="margin: auto; width: 50%; border: 1px solid black; padding: 5px;">
+    <select [(ngModel)]="selectedUser" (ngModelChange)='onChange($event)' style="width: 100%;">
+        <option *ngFor="let data of dataList; index as i" [value]="data.id">
+            {{ nameList[i] }}
+        </option>
+    </select>
+</div>

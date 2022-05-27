@@ -1,0 +1,23 @@
+<div *ngIf="userData" class="container">
+    <img [src]="userData.avatar" alt="">
+
+    <p>
+        {{ 'First Name: ' + userData.first_name }}
+    </p>
+
+    <p>
+        {{ 'Last Name: ' + ' ' + userData.last }}
+    </p>
+
+    <p>
+        {{ 'Email: ' + userData.email }}
+    </p>
+
+    <p>
+        {{ 'UserId: ' + userData.id }}
+    </p>
+
+    <p>
+        <button (click)="onBackClick()"> BACK TO DROPDOWN </button>
+    </p>
+</div>
